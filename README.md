@@ -71,6 +71,6 @@ mkdir -p /var/www/html/cloud9/workspaces/
 forever start ~/c9sdk/server.js -w /var/www/html/cloud9/workspaces/ -p 8081 -a {user}:{password}
 
 # apex
-curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh
+curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sudo sh
 
 
