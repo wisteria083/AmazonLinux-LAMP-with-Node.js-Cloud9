@@ -1,13 +1,15 @@
 # AmazonLinux-LAMP-with-Node.js-Cloud9
 
-please read raw mode.
-
 # packages
+```text
 sudo yum -y install initscripts && sudo yum -y clean all && sudo yum -y update  
 sudo yum -y install gcc gcc-c++ make wget unzip git lm_sensors rpm-build yum-cron nfs-utils nfs-utils-lib nfs-common nap git glibc-static  
+```
 
 # git clone me
+```text
 git clone https://github.com/wisteria083/AmazonLinux-LAMP-with-Node.js-Cloud9.git ~/setup  
+```
 
 # nvm & node
 curl https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash  
@@ -17,6 +19,7 @@ nvm alias default 4.3.0
 nvm use default  
 
 # apache
+```text
 sudo yum install -y httpd24  
 sudo cp ./setup/httpd-*.conf /etc/httpd/conf.d/  
 sudo cp ./setup/mod_*.conf /etc/httpd/conf.d/  
@@ -32,6 +35,7 @@ chmod -R 777 /var/www/html
 
 sudo service httpd start
 sudo service httpd stop
+```
 
 # php 7.0
 
