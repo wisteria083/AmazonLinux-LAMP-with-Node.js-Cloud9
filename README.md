@@ -24,3 +24,4 @@ Include conf.d/apache24-config/*.conf
 AllowOverride All  
 </Directory>  
 ' >> /etc/httpd/conf/httpd.conf"  
+
