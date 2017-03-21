@@ -28,6 +28,8 @@ AllowOverride All
 </Directory>  
 ' >> /etc/httpd/conf/httpd.conf"  
 
+chmod -R 777 /var/www/html
+
 sudo service httpd start
 sudo service httpd stop
 
