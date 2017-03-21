@@ -12,11 +12,13 @@ git clone https://github.com/wisteria083/AmazonLinux-LAMP-with-Node.js-Cloud9.gi
 ```
 
 # nvm & node
+```text
 curl https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash  
 source ~/.nvm/nvm.sh  
 nvm install 4.3.0  
 nvm alias default 4.3.0  
 nvm use default  
+```
 
 # apache
 ```text
@@ -38,7 +40,7 @@ sudo service httpd stop
 ```
 
 # php 7.0
-
+```text
 sudo yum install -y php70 php70-common php70-devel php70-imap php70-mbstring php70-mcrypt php70-mysqlnd php70-pdo php70-xml
 
 sudo sh -c "echo -e '
@@ -56,14 +58,20 @@ mbstring.substitute_character = nones
 
 sudo service httpd start
 sudo service httpd stop
+```
 
 # mysql5.6
+```text
 sudo yum install -y mysql56 mysql56-server
+```
 
 # redis
+```text
 sudo yum --enablerepo=epel install -y redis
+```
 
 # cloud9
+```text
 sudo yum install -y git gcc gcc-c++ openssl-devel readline-devel glibc-static
 python -V
 
@@ -73,8 +81,9 @@ npm install forever -g
 
 mkdir -p /var/www/html/cloud9/workspaces/
 forever start ~/c9sdk/server.js -w /var/www/html/cloud9/workspaces/ -p 8081 -a {user}:{password}
+```
 
 # apex
+```text
 curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sudo sh
-
-
+```
