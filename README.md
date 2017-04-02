@@ -27,7 +27,6 @@ sudo cp ./setup/httpd-*.conf /etc/httpd/conf.d/
 sudo cp ./setup/mod_*.conf /etc/httpd/conf.d/  
 
 sudo sh -c "echo -e '  
-Include conf.d/apache24-config/*.conf  
 <Directory \"/var/www/html\">  
 AllowOverride All  
 </Directory>  
